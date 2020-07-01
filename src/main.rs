@@ -10,6 +10,6 @@ fn main() {
         exit(1);
     }
     let bs58_str = &args[1];
-    let x = bs58::decode(bs58_str).into_vec().unwrap();;
+    let x = bs58::decode(bs58_str).into_vec().unwrap();
     println!("{}", hex::encode(x));
 }
